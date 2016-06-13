@@ -1,5 +1,2 @@
-# GNU_HL7PATIENT_EXPORT
-# GNU_HL7PATIENT_EXPORT
-# HL7_DB_EXPORT
-# HL7_DB_EXPORT
-# HL7_DB_EXPORT
+# Een open source programma
+# Abel Enstra 2016
