@@ -9,7 +9,7 @@ namespace HL7_DB_EXPORT
 {
     class MainThread
     {
-        public void processEstomed(string host, int port)
+        public static void processEstomed(string host, int port)
         {
             DBUtil.MysqlDBConnection db = DBUtil.MysqlDBConnection.Instance();
             db.connect(host, port, "e2demo", "", "");
@@ -20,7 +20,7 @@ namespace HL7_DB_EXPORT
             File.WriteAllText("Patients.hl7", stream);
         }
 
-        public void processProdentis(string host, int port)
+        public static void processProdentis(string host, int port)
         {
             DBUtil.MSSqlDBConnection db = DBUtil.MSSqlDBConnection.Instance();
             db.connect(host, port, "Prodentis500", "", "");
