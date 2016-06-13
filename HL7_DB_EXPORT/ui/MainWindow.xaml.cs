@@ -27,11 +27,12 @@ namespace HL7_DB_EXPORT
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            MainThread.processProdentis(textBox.Text, int.Parse(textBox1.Text));
         }
 
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
         {
+            MainThread.processEstomed(textBox.Text, int.Parse(textBox1.Text));
 
         }
     }
